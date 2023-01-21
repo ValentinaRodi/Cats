@@ -1,13 +1,260 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+@font-face {
+  font-family: "Trebuchet MS";
+  src: local("Trebuchet MS"), url(../fonts/TrebuchetMS.woff) format("woff");
+  src: local("Trebuchet MS"), url(../fonts/TrebuchetMS-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "Exo2.0";
+  src: local("Exo2.0"), url(../fonts/Exo2-VariableFont_wght.ttf) format("ttf");
+}
+body {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+h2 {
+  font-family: "Exo2.0", Verdana, sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.4rem;
+  font-style: normal;
+  line-height: 1.6rem;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3.6rem;
+  font-style: normal;
+  line-height: 4.4rem;
+  font-weight: bold;
+  color: #000;
+}
+
+h2 {
+  font-size: 3.6rem;
+  font-style: normal;
+  line-height: 4.4rem;
+  font-weight: lighter;
+  text-shadow: 0px 1px 1px #000000;
+  color: #fff;
+  margin-top: 10%;
+  margin-bottom: 4%;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-style: normal;
+  line-height: 2.8rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.link {
+  color: #1698D9;
+  font-size: 1.3rem;
+  font-style: normal;
+  line-height: 1.5rem;
+  font-weight: normal;
+  text-decoration: none;
+  border-bottom: 1px dashed #1698D9;
+}
+
+.card:hover .link {
+  color: #2EA8E6;
+  border-bottom: 1px dashed #2EA8E6;
+}
+
+.link_selected {
+  color: #D91667;
+  border-bottom: 1px dashed #D91667;
+}
+
+.card:hover .link_selected {
+  color: #E52E7A;
+  border-bottom: 1px dashed #E52E7A;
+}
+
+.card {
+  width: 320px;
+  height: 509px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.card__block {
+  width: 320px;
+  height: 480px;
+  background-color: #F2F2F2;
+  border: 4px solid #1698D9;
+  border-radius: 12px;
+  background-image: url(../../img/cat.png);
+  background-position: -28px 205px;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 13%, 0 100%, 100% 100%, 100% 0, 18% 0);
+          clip-path: polygon(0 13%, 0 100%, 100% 100%, 100% 0, 18% 0);
+}
+.card__block:hover {
+  border: 4px solid #2EA8E6;
+}
+.card__block:before {
+  width: 80px;
+  height: 80px;
+  content: "";
+  position: absolute;
+  transform: rotate(43deg);
+  left: -49px;
+  right: 70%;
+  top: -9%;
+  bottom: 88.32%;
+  background: #F2F2F2;
+  border: 4px solid #1698D9;
+  background-color: rgba(21, 10, 0, 0.212);
+  background-blend-mode: lighten;
+}
+.card__block:hover:before {
+  border: 4px solid #2EA8E6;
+}
+
+.card_selected {
+  border: 4px solid #D91667;
+}
+.card_selected:hover {
+  border: 4px solid #E52E7A;
+}
+.card_selected:before {
+  border: 4px solid #D91667;
+}
+.card_selected:hover:before {
+  border: 4px solid #E52E7A;
+}
+
+.card_none {
+  filter: grayscale(1);
+}
+
+.card:hover .circle {
+  background: #2EA8E6;
+}
+
+.wrapper-block {
+  padding-left: 48px;
+}
+
+.block__text {
+  font-size: 1.6rem;
+  font-style: normal;
+  line-height: 1.9rem;
+  font-weight: normal;
+  color: #666666;
+  margin-top: 21px;
+}
+
+.text {
+  font-size: 1.4rem;
+  font-style: normal;
+  line-height: 1.6rem;
+  font-weight: normal;
+  color: #666666;
+}
+
+.text-block {
+  height: 48px;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  background: #1698D9;
+  margin-top: 211px;
+  margin-left: 172px;
+  text-align: center;
+}
+
+.text__mass {
+  font-size: 4.2rem;
+  font-style: normal;
+  line-height: 2.8rem;
+  font-weight: normal;
+  color: #fff;
+  padding-top: 18px;
+}
+
+.text__kg {
+  font-size: 2.2rem;
+  font-style: normal;
+  line-height: 3.2rem;
+  font-weight: normal;
+  color: #fff;
+}
+
+.buy-text {
+  text-align: center;
+  margin-top: 14px;
+}
+
+.card__text {
+  font-size: 1.3rem;
+  font-style: normal;
+  line-height: 1.5rem;
+  font-weight: normal;
+  color: #fff;
+}
+
+.text_stock {
+  color: #FFFF66;
+}
+
+.layout-3-column-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+}
+@media (max-width: 1177px) {
+  .layout-3-column-wrap {
+    justify-content: center;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../../img/pattern.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  padding: 0 5%;
+}/*# sourceMappingURL=index.css.map */

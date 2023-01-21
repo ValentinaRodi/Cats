@@ -1,0 +1,22 @@
+%transition {
+  transition: all .2s ease-out;
+}
+
+@font-face {
+  font-family: 'Trebuchet MS';
+  src: local('Trebuchet MS'), url(../fonts/TrebuchetMS.woff) format('woff');
+  src: local('Trebuchet MS'), url(../fonts/TrebuchetMS-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Exo2.0';
+  src: local('Exo2.0'), url(../fonts/Exo2-VariableFont_wght.ttf) format('ttf');
+}
+
+%font-prim {
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
+}
+
+%font-add {
+  font-family: 'Exo2.0', Verdana, sans-serif;
+}

@@ -1,0 +1,18 @@
+@mixin font ($size: 1.4rem, $height: 1.6rem, $weight: normal) {
+    font-size: $size;
+    font-style: normal;
+    line-height: $height;
+    font-weight: $weight;
+}
+
+@mixin columns ($width, $wrap) {
+    display: flex;
+    flex-wrap: $wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    
+    @media (max-width: $tablet-width) {
+        justify-content: center;
+    }
+}
