@@ -27,6 +27,7 @@ const Main = () => {
     }, []);
 
     const handlerClickSelected = (e) => {
+        
         const idItem = +e.currentTarget.id
 
         for (let i = 0; i < colorSelected.length; i++) {

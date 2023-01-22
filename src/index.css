@@ -19,11 +19,11 @@ code {
   src: local("Exo2.0"), url(../fonts/Exo2-VariableFont_wght.ttf) format("ttf");
 }
 body {
-  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-family: "Trebuchet MS";
 }
 
 h2 {
-  font-family: "Exo2.0", Verdana, sans-serif;
+  font-family: "Exo2.0";
 }
 
 html {

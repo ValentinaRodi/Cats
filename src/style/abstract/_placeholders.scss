@@ -10,13 +10,13 @@
 
 @font-face {
   font-family: 'Exo2.0';
-  src: local('Exo2.0'), url(../fonts/Exo2-VariableFont_wght.ttf) format('ttf');
+  src: local('Exo2.0'), url(../fonts/Exo2-VariableFont_wght.ttf) format('truetype');
 }
 
 %font-prim {
-  font-family: 'Trebuchet MS', Verdana, sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 %font-add {
-  font-family: 'Exo2.0', Verdana, sans-serif;
+  font-family: 'Exo2.0', sans-serif;
 }
